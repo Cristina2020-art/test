@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>aplicatie A</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="load()">
+<div id="myform">
+<b>Formular simplu cu nume si varsta </b>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Age:</td>
+        <td><input type="text" id="age">
+    </tr>
+</table>
+<table>   
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="add" value="Add to Storage" onclick="Javascript:save()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="get" value="Get from Storage" onclick="Javascript:get()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="del" value="Remove from Storage" onclick="Javascript:remove()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="clear" value="Clear Local Storage" onclick="Javascript:clearStorage()">
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="saveC" value="Save complex data" onclick="Javascript:saveComplexData()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="restoreC" value="Restore complex data" onclick="Javascript:restoreComplexData()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="sArray" value="Save Array data" onclick="Javascript:saveArrayData()">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+            <input type="button" id="rArray" value="Restore Array data" onclick="Javascript:restoreArrayData()">
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
